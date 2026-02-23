@@ -1,1 +1,0 @@
-let totalSeconds=120;const minutesEl=document.getElementById("minutes"),secondsEl=document.getElementById("seconds"),timer=setInterval((()=>{if(totalSeconds<=0)return clearInterval(timer);totalSeconds--;let t=Math.floor(totalSeconds/60),e=totalSeconds%60;minutesEl.textContent=t<10?"0"+t:t,secondsEl.textContent=e<10?"0"+e:e}),1e3);
